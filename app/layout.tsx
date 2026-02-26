@@ -28,6 +28,12 @@ export default function RootLayout({
           src="https://tally.so/widgets/embed.js"
           strategy="beforeInteractive"
         />
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4271458389087923"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          async
+        />
         {children}
         <Footer />
         <Analytics />
