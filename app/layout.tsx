@@ -23,16 +23,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4271458389087923"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="flex min-h-screen flex-col">
         <Script
           src="https://tally.so/widgets/embed.js"
           strategy="beforeInteractive"
-        />
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4271458389087923"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-          async
         />
         {children}
         <Footer />
