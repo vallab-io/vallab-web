@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
-import { Mail, Github, Linkedin, Instagram, Coffee, ArrowUpRight, Briefcase } from "lucide-react";
+import { Mail, Github, Linkedin, Instagram, Coffee, ArrowUpRight, Briefcase, Dumbbell } from "lucide-react";
 
 export default function Home() {
   return (
@@ -35,56 +35,75 @@ export default function Home() {
             <strong>최고의 가치</strong>를 만들어냅니다.
           </p>
           <p>
-            창작자를 위한 뉴스레터 SaaS 서비스인 <strong>Vality</strong>를 개발하고 있으며,
+            Vality, Show Your Fit 등 다양한 서비스를 만들고 있으며,
             다양한 외주 프로젝트를 통해 고객에게 <strong>진정한 가치</strong>를 제공하고 있습니다.
           </p>
         </div>
 
-        {/* 4. Connect With Me - 카드 형태 (참고 이미지 스타일) */}
+        {/* 4. Contact - 카드 형태 (참고 이미지 스타일) */}
         <div className="mx-auto w-full max-w-lg">
-        <Card className="p-6 rounded-2xl border border-gray-100 shadow-sm">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-5">
-            Connect With Me
-          </h2>
-          <div className="flex gap-4">
-            <Link
-              href="mailto:jihoi.kang@vallab.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-gray-500 flex items-center justify-center text-white hover:bg-gray-600 transition-colors"
-            >
-              <Mail className="h-6 w-6" />
-            </Link>
-            <Link
-              href="https://github.com/jihoi-kang"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white hover:bg-gray-800 transition-colors"
-            >
-              <Github className="h-6 w-6" />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/jihoi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-[#0A66C2] flex items-center justify-center text-white hover:bg-[#004182] transition-colors"
-            >
-              <Linkedin className="h-6 w-6" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/aloha.jihoi/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-[#E4405F] flex items-center justify-center text-white hover:bg-[#d62d4a] transition-colors"
-            >
-              <Instagram className="h-6 w-6" />
-            </Link>
-          </div>
-        </Card>
+          <Card className="p-6 rounded-2xl border border-gray-100 shadow-sm">
+            <h2 className="text-sm font-semibold tracking-wide text-gray-500 mb-5">
+              Contact
+            </h2>
+            <div className="flex gap-4">
+              <Link
+                href="mailto:jihoi.kang@vallab.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-gray-500 flex items-center justify-center text-white hover:bg-gray-600 transition-colors"
+              >
+                <Mail className="h-6 w-6" />
+              </Link>
+              <Link
+                href="https://github.com/jihoi-kang"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white hover:bg-gray-800 transition-colors"
+              >
+                <Github className="h-6 w-6" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/jihoi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-[#0A66C2] flex items-center justify-center text-white hover:bg-[#004182] transition-colors"
+              >
+                <Linkedin className="h-6 w-6" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/aloha.jihoi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-[#E4405F] flex items-center justify-center text-white hover:bg-[#d62d4a] transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
+              </Link>
+            </div>
+          </Card>
         </div>
 
         {/* ---- 카드 섹션 ---- */}
         <div className="mx-auto w-full max-w-lg flex flex-col gap-4 pt-1">
+          {/* Show Your Fit 카드 */}
+          <Card className="group hover:shadow-lg transition-shadow overflow-hidden rounded-2xl">
+            <Link
+              href="https://showyour.fit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-6"
+            >
+              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                <Dumbbell className="h-6 w-6 text-emerald-700" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-xl font-semibold mb-1.5 text-gray-900 leading-snug">Show Your Fit</h3>
+                <p className="text-sm text-gray-600">가장 예쁜 오운완 인증샷을 만들수 있습니다.</p>
+              </div>
+              <ArrowUpRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
+            </Link>
+          </Card>
+
           {/* Vality 카드 */}
           <Card className="group hover:shadow-lg transition-shadow overflow-hidden rounded-2xl">
             <Link
