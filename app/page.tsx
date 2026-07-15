@@ -93,12 +93,18 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-6"
             >
-              <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                <Dumbbell className="h-6 w-6 text-emerald-700" />
+              <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center overflow-hidden flex-shrink-0">
+                <Image
+                  src="/showyourfit-logo.png"
+                  alt="Vality"
+                  width={48}
+                  height={48}
+                  className="object-contain"
+                />
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-xl font-semibold mb-1.5 text-gray-900 leading-snug">Show Your Fit</h3>
-                <p className="text-sm text-gray-600">가장 예쁜 오운완 인증샷을 만들수 있습니다.</p>
+                <p className="text-sm text-gray-600">10초만에 만드는 나만의 오운완 포스터 플랫폼입니다.</p>
               </div>
               <ArrowUpRight className="h-5 w-5 text-gray-400 flex-shrink-0" />
             </Link>
